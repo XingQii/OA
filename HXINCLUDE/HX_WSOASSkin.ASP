@@ -1,0 +1,1 @@
+<%if WSOASSkin="" or isnull(WSOASSkin) then WSOASSkin=WS_DefaultSkin%>

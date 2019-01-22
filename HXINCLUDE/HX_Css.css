@@ -1,0 +1,107 @@
+BODY{
+FONT-SIZE: 9pt;
+}
+TD{font-family: ËÎÌו;
+font-size: 9pt;
+}
+.tableBorder1{
+width:590px;
+border: 1px; 
+background-color: #247624;
+}
+.fontmenu{color:#ffffff; margin-left:35;}
+.tableBorder2{
+width:500px;
+border: 1px; 
+background-color: #247624;
+}
+.tableBorder3{
+width:470px;
+border: 1px; 
+background-color: #247624;
+}
+.bgLine {background-image: url(../HXIMAGES/line.gif);line-height: 22px;}
+td.TableBody1{
+background-color: #F4FAED;
+}
+td.TableBody2{
+background-color: #E3F1D1;
+}
+A:link
+{
+COLOR: blue;
+TEXT-DECORATION: none
+}
+A:visited
+{
+COLOR: blue;
+TEXT-DECORATION: none
+}
+A:active
+{
+COLOR: red;
+TEXT-DECORATION: none
+}
+A:hover
+{
+COLOR: #999999;
+TEXT-DECORATION: none
+}
+INPUT{font-size: 12px;color:#000000;border: 1px solid #000000;background-color: #ffffff;}
+INPUT.radio{font-size: 12px;color:000000;border: 0px;background-color: #D4D0C8;}
+TEXTAREA
+{
+FONT-SIZE: 9pt;
+FONT-FAMILY: ËÎÌו
+}
+SELECT
+{
+FONT-SIZE: 9pt;
+FONT-FAMILY: ËÎÌו
+}
+
+.Up
+{border-left: 1Px solid rgb(12,12,12);
+border-right: 1px solid rgb(12,12,12);
+border-bottom: 1px solid rgb(12,12,12);
+border-top: 1px solid rgb(12,12,12);
+cursor:hand;
+}
+.Down
+{border-right: 1Px solid rgb(233,244,249);
+border-left: 1px solid rgb(12,12,12);
+border-top: 1px solid rgb(12,12,12);
+border-bottom: 1px solid rgb(233,244,249);
+cursor:hand;
+}
+.None
+{border-right: 1Px solid rgb(255,255,255);
+border-left: 1px solid rgb(255,255,255);
+border-top: 1px solid rgb(255,255,255);
+border-bottom: 1px solid rgb(255,255,255);
+cursor:hand;
+}
+.photo-frame .topx-- {
+	BACKGROUND-IMAGE: url(../HXIMAGES/photo/frame-topx--.gif); VERTICAL-ALIGN: top; WIDTH: auto; BACKGROUND-REPEAT: no-repeat; HEIGHT: 4px
+}
+.photo-frame .top-x- {
+	BACKGROUND-IMAGE: url(../HXIMAGES/photo/frame-top-x-.gif); WIDTH: auto; BACKGROUND-REPEAT: repeat-x; HEIGHT: 4px
+}
+.photo-frame .top--x {
+	BACKGROUND-IMAGE: url(../HXIMAGES/photo/frame-top--x.gif); VERTICAL-ALIGN: top; WIDTH: auto; BACKGROUND-REPEAT: no-repeat; HEIGHT: 4px
+}
+.photo-frame .midx-- {
+	BACKGROUND-IMAGE: url(../HXIMAGES/photo/frame-midx--.gif); WIDTH: 4px; BACKGROUND-REPEAT: repeat-y; HEIGHT: 100%
+}
+.photo-frame .mid--x {
+	BACKGROUND-IMAGE: url(../HXIMAGES/photo/frame-mid--x.gif); WIDTH: 4px; BACKGROUND-REPEAT: repeat-y; HEIGHT: 100%
+}
+.photo-frame .botx-- {
+	BACKGROUND-IMAGE: url(../HXIMAGES/photo/frame-botx--.gif); VERTICAL-ALIGN: top; WIDTH: 4px; BACKGROUND-REPEAT: no-repeat; HEIGHT: 4px
+}
+.photo-frame .bot-x- {
+	BACKGROUND-IMAGE: url(../HXIMAGES/photo/frame-bot-x-.gif); WIDTH: auto; BACKGROUND-REPEAT: repeat-x; HEIGHT: 4px
+}
+.photo-frame .bot--x {
+	BACKGROUND-IMAGE: url(../HXIMAGES/photo/frame-bot--x.gif); VERTICAL-ALIGN: bottom; WIDTH: 4px; BACKGROUND-REPEAT: no-repeat; HEIGHT: 4px
+}

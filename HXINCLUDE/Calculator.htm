@@ -1,0 +1,192 @@
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=gb2312">
+
+<style type="text/css">
+BODY {FONT-SIZE: 9pt; FONT-FAMILY: "宋体"}
+TD {FONT-SIZE: 9pt; FONT-FAMILY: "宋体"}
+INPUT {FONT-SIZE:9PT;FONT-FAMILY:"宋体"}
+</style>
+<title>计算器</title>
+</head>
+<body bgcolor="#D4D0C8" leftmargin="1" topmargin="0" bottommargin="0"><bgsound id='btn' name='btn' src='' loop='1'>
+<table height="38" cellSpacing="0" cellPadding="0" width="300" align="center" border="0">
+<tr>
+<td class="unnamed2" height="12" width="300">
+          <table width="299" height="159" bgcolor="#D4D0C8" border="0" cellPadding="2" cellSpacing="0">
+         <form name="Keypad" action> <tr> 
+                <td align="center" colSpan="6"><input style="text-align:right; background-color:#CCCCCC " size="45" value="0" name="ReadOut" readonly>                  </td>
+                </tr>
+              <tr> 
+                <td width="53">  
+                    <input class="Button" onclick="btn.src='../HXIMAGES/Calculator/sound/7.wav';NumPressed(7);" type="button" value="  7  " name="btnSeven">
+                  </td>
+                <td width="46"> 
+                    <input class="Button" onclick="btn.src='../HXIMAGES/Calculator/sound/8.wav';NumPressed(8);" type="button" value="  8  " name="btnEight">
+                  </td>
+                <td width="46"> 
+                    <input class="Button" onclick="btn.src='../HXIMAGES/Calculator/sound/9.wav';NumPressed(9);" type="button" value="  9  " name="btnNine">
+                  </td>
+                <td width="34"> 
+                    <input class="Button" onclick="btn.src='../HXIMAGES/Calculator/sound/hex.wav';hexchange();" type="button" value="HEX" name="btnHex">
+                  </td>
+                <td width="46"> 
+                    <input class="Button" onClick="btn.src='../HXIMAGES/Calculator/sound/Clear.wav';Clear();" type="button" value="  C  " name="btnClear">
+                  </td>
+                <td width="48" align="center"> 
+                    <input class="Button" onClick="btn.src='../HXIMAGES/Calculator/sound/ClearEntry.wav';ClearEntry();" type="button" value=" CE  " name="btnClearEntry2">
+                  </td>
+              </tr>
+              <tr> 
+                <td width="53">  
+                    <input class="Button" onclick="btn.src='../HXIMAGES/Calculator/sound/4.wav';NumPressed(4);" type="button" value="  4  " name="btnFour">
+                  </td>
+                <td width="46"> 
+                    <input class="Button" onclick="btn.src='../HXIMAGES/Calculator/sound/5.wav';NumPressed(5);" type="button" value="  5  " name="btnFive">
+                  </td>
+                <td width="46"> 
+                    <input class="Button" onclick="btn.src='../HXIMAGES/Calculator/sound/6.wav';NumPressed(6);" type="button" value="  6  " name="btnSix">
+                  </td>
+                <td width="34"> 
+                    <input class="Button" onclick="btn.src='../HXIMAGES/Calculator/sound/oct.wav';octchange();" type="button" value="OCT" name="btnClearEntry222">
+                  </td>
+                <td align="middle" width="46"> 
+                    <input class="Button" onClick="btn.src='../HXIMAGES/Calculator/sound/Neg.wav';Neg();" type="button" value=" +/- " name="btnNeg">
+                  </td>
+                <td align="center" width="48"> 
+                    <input class="Button" onClick="btn.src='../HXIMAGES/Calculator/sound/Percent.wav';Percent();" type="button" value="  %  " name="btnPercent">
+                  </td>
+              </tr>
+              <tr> 
+                <td width="53">  
+                    <input class="Button" onclick="btn.src='../HXIMAGES/Calculator/sound/1.wav';NumPressed(1);" type="button" value="  1  " name="btnOne">
+                  </td>
+                <td width="46"> 
+                    <input class="Button" onclick="btn.src='../HXIMAGES/Calculator/sound/2.wav';NumPressed(2);" type="button" value="  2  " name="btnTwo">
+                  </td>
+                <td width="46"> 
+                    <input class="Button" onclick="btn.src='../HXIMAGES/Calculator/sound/3.wav';NumPressed(3);" type="button" value="  3  " name="btnThree">
+                  </td>
+                <td width="34"> 
+                    <input class="Button" onclick="btn.src='../HXIMAGES/Calculator/sound/bin.wav';binchange();" type="button" value="BIN" name="btnClearEntry223">
+                  </td>
+                <td align="middle" width="46"> 
+                    <input class="Button" onClick="btn.src='../HXIMAGES/Calculator/sound/jia.wav';Operation('+');" type="button" value="  +  " name="btnPlus">
+                  </td>
+                <td align="center" width="48"> 
+                    <input class="Button" onClick="btn.src='../HXIMAGES/Calculator/sound/jian.wav';Operation('-');" type="button" value="  -  " name="btnMinus">
+                  </td>
+              </tr>
+              <tr> 
+                <td width="53">  
+                    <input class="Button" onclick="btn.src='../HXIMAGES/Calculator/sound/0.wav';NumPressed(0);" type="button" value="  0  " name="btnZero">
+                  </td>
+                <td width="46"> 
+                    <input class="Button" onclick="btn.src='../HXIMAGES/Calculator/sound/Decimal.wav';Decimal();" type="button" value="  .  " name="btnDecimal">
+                  </td>
+                <td colSpan="2">  
+                    <input class="Button" onclick="btn.src='../HXIMAGES/Calculator/sound/deng.wav';Operation('=');" type="button" value="   =   " name="btnEquals">
+                  </td>
+                <td width="46"> 
+                    <input class="Button" onClick="btn.src='../HXIMAGES/Calculator/sound/chen.wav';Operation('*');" type="button" value="  *  " name="btnMultiply">
+                  </td>
+                <td width="48">  
+                    <input class="Button" onClick="btn.src='../HXIMAGES/Calculator/sound/chu.wav';Operation('/');" type="button" value="  /  " name="btnDivide">
+                  </div></tr></form>            
+          </table></td></tr></table>  
+</body>
+  <script language="JavaScript">
+var FKeyPad = document.Keypad;
+var Accum = 0;
+var FlagNewNum = false;
+var PendingOp = "";
+function NumPressed (Num) {
+if (FlagNewNum) {
+FKeyPad.ReadOut.value  = Num;
+FlagNewNum = false;
+   }
+else {
+if (FKeyPad.ReadOut.value == "0")
+FKeyPad.ReadOut.value = Num;
+else
+FKeyPad.ReadOut.value += Num;
+   }
+}
+function Operation (Op) {
+var Readout = FKeyPad.ReadOut.value;
+if (FlagNewNum && PendingOp != "=");
+else
+{
+FlagNewNum = true;
+if ( '+' == PendingOp )
+Accum += parseFloat(Readout);
+else if ( '-' == PendingOp )
+Accum -= parseFloat(Readout);
+else if ( '/' == PendingOp ){
+if(parseFloat(Readout)!=0) 
+Accum /= parseFloat(Readout);
+else
+Accum="除数不能为零";
+btn.src='../HXIMAGES/Calculator/sound/noAccum.wav';
+}
+else if ( '*' == PendingOp )
+Accum *= parseFloat(Readout);
+else
+Accum = parseFloat(Readout);
+FKeyPad.ReadOut.value = Accum;
+PendingOp = Op;
+   }
+}
+function Decimal () {
+var curReadOut = FKeyPad.ReadOut.value;
+if (FlagNewNum) {
+curReadOut = "0.";
+FlagNewNum = false;
+   }
+else
+{
+if (curReadOut.indexOf(".") == -1)
+curReadOut += ".";
+   }
+FKeyPad.ReadOut.value = curReadOut;
+}
+function ClearEntry () {
+FKeyPad.ReadOut.value = "0";
+FlagNewNum = true;
+}
+function Clear () {
+Accum = 0;
+PendingOp = "";
+ClearEntry();
+}
+function Neg () {
+FKeyPad.ReadOut.value = (-1)*parseFloat(FKeyPad.ReadOut.value) ;
+}
+function Percent () {
+FKeyPad.ReadOut.value = (parseFloat(FKeyPad.ReadOut.value) / 100) * parseFloat(Accum);
+}
+function hexchange()
+{
+var hex,dec;
+dec = parseFloat(FKeyPad.ReadOut.value);
+hex = dec.toString(16);
+window.alert("该十进制数转成十六进制数为："+ hex);
+//FKeyPad.ReadOut.value=hex;
+}
+function octchange()
+{
+var oct,dec;
+dec = parseFloat(FKeyPad.ReadOut.value);
+oct = dec.toString(8);
+window.alert("该十进制数转成八进制数为："+ oct);
+//FKeyPad.ReadOut.value=oct;
+}
+function binchange()
+{
+var bin,dec;
+dec = parseFloat(FKeyPad.ReadOut.value);
+bin = dec.toString(2);
+window.alert("该十进制数转成二进制数为："+ bin);
+//FKeyPad.ReadOut.value=bin;
+}
+</script>

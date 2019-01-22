@@ -1,0 +1,9 @@
+
+input:focus,textarea:focus,select:focus{
+  outline: none;
+  border-color: #d58100;
+}
+textarea{
+  font-family: Arial;
+  font-size: 14px;
+}
